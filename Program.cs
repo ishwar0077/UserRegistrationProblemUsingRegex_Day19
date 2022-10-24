@@ -6,16 +6,16 @@ namespace UserRegistrationUsingRegEX
         static void Main(string[] args)
         {
             // Console.WriteLine("Welcome To User registration Problem");
-            Console.Write("Enter The Email:");
-            String email = Console.ReadLine();
+            Console.WriteLine("Enter the Mobile Number");
+            String mob = Console.ReadLine();
 
-            if (UserRegistration.validate(email))
+            if (UserRegistration.validate(mob))
             {
-                Console.WriteLine("Valid Email");
+                Console.WriteLine("Valid Mobile number");
             }
             else
             {
-                Console.WriteLine("Invalid Email");
+                Console.WriteLine("Invalid Mobile number");
             }
         }
 
