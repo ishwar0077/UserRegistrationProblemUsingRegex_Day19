@@ -10,12 +10,11 @@ namespace UserRegistrationUsingRegEX
     public class UserRegistration
     {
         //Regular expression
-        public static string reg = "[A-Za-z1-9]{8}";
-
-        //method for comparision
-        public static bool validate(string password)
+        public static string reg = "(?=.*[A-Z]).{8}";
+        public static bool validate(string word)
         {
-            return Regex.IsMatch(password, reg);
+            //return true if the word matches the regex
+            return Regex.IsMatch(word, reg);
         }
 
 
