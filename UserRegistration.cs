@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -10,13 +9,15 @@ namespace UserRegistrationUsingRegEX
 {
     public class UserRegistration
     {
-        //Regex formatting
-        public static String reg = "^[9]{1}[1]{1}[\\s][6-9]{1}[0-9]{9}";
+        //Regular expression
+        public static string reg = "[A-Za-z1-9]{8}";
 
         //method for comparision
-        public static bool validate(String word)
+        public static bool validate(string password)
         {
-            return Regex.IsMatch(word, reg);
+            return Regex.IsMatch(password, reg);
         }
+
+
     }
 }
