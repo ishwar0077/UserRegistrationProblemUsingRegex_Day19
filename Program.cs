@@ -6,11 +6,10 @@ namespace UserRegistrationUsingRegEX
         static void Main(string[] args)
         {
             // Console.WriteLine("Welcome To User registration Problem");
+            Console.WriteLine("Enter the last name");
+            String LName = Console.ReadLine();
 
-            Console.WriteLine("Enter the first name");
-            String FName = Console.ReadLine();
-
-            if (UserRegistration.Validate(FName))
+            if (UserRegistration.Validate(LName))
             {
                 Console.WriteLine("Valid Name");
             }

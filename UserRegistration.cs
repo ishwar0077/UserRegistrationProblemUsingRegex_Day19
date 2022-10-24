@@ -15,6 +15,5 @@ namespace UserRegistrationUsingRegEX
         {
             return Regex.IsMatch(word, reg);
         }
-
     }
 }
